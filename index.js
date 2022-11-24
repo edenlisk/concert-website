@@ -60,6 +60,7 @@ const performersInfo = [
   {
     performerPicture: './assets/mobile/performers/sara-mingardo.jpg',
     performername: 'Sara Mingardo',
+    AlternativeText:'Sara Mingardo',
     post: 'Contralto',
     performerDescription: 'The Italian true contralto, Sara Mingardo, studied in her hometown Venice' +
         ' at the Academy Benedetto Marcello. She won prizes in some singing competitions',
@@ -67,6 +68,7 @@ const performersInfo = [
   {
     performerPicture: './assets/mobile/performers/maddalena-de-biasi.jpg',
     performername: 'Maddalena De Biasi',
+    AlternativeText:'Maddalena De Biasi',
     post: 'Soprano',
     performerDescription: 'Maddalena began her musical studies at a very young age. At the age of sixteen' +
         ' she was admitted to the conservatory Dall’Abaco in Verona and then graduated with full marks in 2019.',
@@ -74,6 +76,7 @@ const performersInfo = [
   {
     performerPicture: './assets/mobile/performers/elaine-daiber.jpg',
     performername: 'Elaine Daiber',
+    AlternativeText:'Elaine Daiber',
     post: 'Soprano',
     performerDescription: 'Boston-based soprano, Elaine Daiber, has been heralded for her “spectacular vocalism”,' +
         ' which has garnered much acclaim on the operatic, concert, and recital stages.',
@@ -81,6 +84,7 @@ const performersInfo = [
   {
     performerPicture: './assets/mobile/performers/elena-matteucci.jpg',
     performername: 'Elena Matteucci',
+    AlternativeText:'Elena Matteucci',
     post: 'Piano.',
     bar: '',
     performerDescription: 'Pianist Matteucci graduated with special honors in piano' +
@@ -91,14 +95,16 @@ const performersInfo = [
   {
     performerPicture: './assets/mobile/performers/federico-piccotti.jpg',
     performername: 'Federico Piccotti',
+    AlternativeText:'Federico Piccotti',
     post: 'Violino',
     bar: '',
     performerDescription: 'Born in Rome, he graduated from the Conservatory of santa' +
         'Cecilia and subsequently specialised at the National Academy of Santa Cecilia.',
   },
   {
-    performerPicture: './assets/mobile/performers/federico-piccotti.jpg',
+    performerPicture: './assets/mobile/performers/tomasz-sierant.gif',
     performername: 'Tomasz Sierant',
+    AlternativeText:'Tomasz Sierant',
     post: 'Flaute',
     bar: '',
     performerDescription: 'Polish flutist Tomasz Sierant: born in 1995, began music study 2008;' +
@@ -129,6 +135,7 @@ for (let i = 0; i < performersInfo.length; i += 1) {
   const performerImg = document.createElement('img');
   performerImg.classList.add('performer-img');
   performerImg.src = performersInfo[i].performerPicture;
+  performerImg.alt = performersInfo[i].AlternativeText
   performerImg.width = 130;
   performerImg.height = 100;
 

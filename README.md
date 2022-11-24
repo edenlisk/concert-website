@@ -23,7 +23,7 @@ It has two pages (home page and about page).
 * Partners/Sponsors
 ***
 ## 🚀 Live Demo
-Click [here]() to view live demo
+Click [here](https://edenlisk.github.io/concert-website/) to view live demo
 ***
 ## 💻 Getting Started
 To get a local copy up and running, follow these steps
@@ -58,4 +58,4 @@ Give a ⭐ to motivate me
 I would like to thank [Cindy Shin in Behance.](https://www.behance.net/adagio07) for providing Good Design.
 ***
 ## 📝 License
-This project is [MIT]() licensed
+This project is [MIT]() licensed.
