@@ -1,0 +1,94 @@
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  position: relative;
+}
+
+.about-main-page {
+  background-image: url(./assets/mobile/about-background.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin: 2rem auto;
+}
+
+.about-description {
+  background-color: #fff;
+  border: #d3d3d3 2px solid;
+  width: 95%;
+}
+
+.contact {
+  font-family: 'lato', sans-serif;
+  font-size: 15px;
+}
+
+.cf-logo {
+  width: 75%;
+  margin: auto;
+  border: 2px solid #d3d3d3;
+}
+
+.moscow-event {
+  position: relative;
+  background-image: url(./assets/mobile/moscow-event.jpg);
+  background-size: 90% 90%;
+  background-repeat: no-repeat;
+  height: 400px;
+  left: 1.5rem;
+  font-family: 'lato', sans-serif;
+}
+
+.cairo-event {
+  position: relative;
+  background-image: url(./assets/mobile/cairo-event.jpg);
+  background-size: 90% 90%;
+  background-repeat: no-repeat;
+  height: 400px;
+  left: 1.5rem;
+  font-family: 'lato', sans-serif;
+}
+
+.partners {
+  background-color: #4c4b4b;
+  width: 95%;
+  margin: 1rem auto;
+  max-height: 90%;
+}
+
+.partners-logo {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+@media all and (min-width: 768px) {
+  .about-description {
+    max-width: 60vw;
+  }
+
+  .cf-logo {
+    width: 50%;
+    margin: auto;
+    border: 2px solid #d3d3d3;
+  }
+
+  .moscow-event {
+    width: 50%;
+  }
+
+  .cairo-event {
+    width: 50%;
+  }
+
+  .partners-logo {
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    justify-content: center;
+    /*display: grid;*/
+    /*grid-template-columns: repeat(2, 1fr);*/
+  }
+}
