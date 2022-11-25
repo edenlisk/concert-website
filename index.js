@@ -1,3 +1,4 @@
+/* eslint-disable no-restricted-globals */
 const header = document.querySelector('.header');
 const desktopNav = document.querySelector('.desktop-nav');
 const headerHeight = header.style.height;
@@ -112,7 +113,6 @@ const performersInfo = [
         + 'immediately became successful in flute competitions; received music education in Poland, Belgium and Switzerland',
   },
 ];
-
 const hiddenPerformers = document.createElement('div');
 hiddenPerformers.classList.add('hidden-performers');
 
@@ -178,57 +178,62 @@ for (let i = 0; i < performersInfo.length; i += 1) {
     performerLeft,
     performerRight,
   );
-  if (i < 2) {
-    performersSection.appendChild(performersContainer);
+  if (screen.width < 768) {
+    if (i < 2) {
+      performersSection.appendChild(performersContainer);
+    } else {
+      performersSection.appendChild(performersContainer);
+      performersContainer.classList.add('d-none');
+    }
   } else {
     performersSection.appendChild(performersContainer);
-    performersContainer.classList.add('d-none');
   }
 }
 
-const showmore = document.createElement('div');
-showmore.classList.add(
-  'text-center',
-  'show-more',
-  'shadow',
-  'py-2',
-);
-
-showmore.innerHTML = `<span>Show More<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ec5242" class="bi bi-chevron-down" viewBox="0 0 16 16">
+if (screen.width < 768) {
+  const showmore = document.createElement('div');
+  showmore.classList.add(
+    'text-center',
+    'show-more',
+    'd-md-none',
+    'shadow',
+    'py-2',
+  );
+  showmore.innerHTML = `<span>Show More<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ec5242" class="bi bi-chevron-down" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z"/>
 </svg></span>`;
 
-performersMainContainer.appendChild(showmore);
-const showLess = document.createElement('div');
-showLess.classList.add(
-  'text-center',
-  'show-less',
-  'shadow',
-  'py-2',
-);
-
-showLess.innerHTML = `<span>Show Less<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ec5242" class="bi bi-chevron-up" viewBox="0 0 16 16">
+  performersMainContainer.appendChild(showmore);
+  const showLess = document.createElement('div');
+  showLess.classList.add(
+    'text-center',
+    'show-less',
+    'shadow',
+    'py-2',
+  );
+  showLess.innerHTML = `<span>Show Less<svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="#ec5242" class="bi bi-chevron-up" viewBox="0 0 16 16">
   <path fill-rule="evenodd" d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z"/>
 </svg></span>`;
 
-const performers = document.querySelectorAll('.performer-container');
-showmore.addEventListener('click', () => {
-  showmore.classList.toggle('active');
-  performers.forEach((pfm) => {
-    if (pfm.classList.contains('d-none')) {
-      pfm.classList.remove('d-none');
-    }
-    performersMainContainer.appendChild(showLess);
+  const performers = document.querySelectorAll('.performer-container');
+  showmore.addEventListener('click', () => {
+    showmore.classList.toggle('active');
+    performers.forEach((pfm) => {
+      if (pfm.classList.contains('d-none')) {
+        pfm.classList.remove('d-none');
+      }
+      performersMainContainer.appendChild(showLess);
+    });
   });
-});
 
-const performersArray = Array.from(performers);
-showLess.addEventListener('click', () => {
-  for (let item = 0; item < performersArray.length; item += 1) {
-    if (item >= 2) {
-      performersArray[item].classList.add('d-none');
+  const performersArray = Array.from(performers);
+  showLess.addEventListener('click', () => {
+    for (let item = 0; item < performersArray.length; item += 1) {
+      if (item >= 2) {
+        performersArray[item].classList.add('d-none');
+      }
     }
-  }
-  performersMainContainer.removeChild(showLess);
-  showmore.classList.remove('active');
-});
+    performersMainContainer.removeChild(showLess);
+    showmore.classList.remove('active');
+  });
+}

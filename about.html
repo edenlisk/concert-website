@@ -28,13 +28,13 @@
       <div class="container-fluid">
         <a class="navbar-brand" href="index.html"><img class="pt-1 ms-5" src="./assets/mobile/cflogo.png" width="40" height="40" alt="Concert Festival Logo"></a>
       </div>
-      <div class="text-center desktop-navigation">
+      <div class="text-center desktop-navigation py-2 pe-5 me-5">
         <ul class="list-unstyled fw-bold d-md-flex align-items-center gap-4 justify-content-center px-5">
-          <li><a class="text-decoration-none list-inline-item desktop-nav-item" href="about.html">About</a></li>
+          <li><a class="text-decoration-none list-inline-item desktop-nav-item" href="index.html">Home</a></li>
           <li><a class="text-decoration-none list-inline-item desktop-nav-item" href="index.html#program">Program</a></li>
           <li><a class="text-decoration-none list-inline-item desktop-nav-item" href="index.html#performers">Performers</a></li>
           <li><a class="text-decoration-none list-inline-item desktop-nav-item" href="index.html#sponsors">Partners</a></li>
-          <li><a class="text-decoration-none list-inline-item desktop-nav-item bordered lh-1" href="#cf-campaign">CF Campaign</a></li>
+          <li><a class="text-decoration-none list-inline-item desktop-nav-item py-1 px-1 bordered lh-1 campaign" href="#cf-campaign">Campaign</a></li>
         </ul>
       </div>
     </nav>
@@ -46,11 +46,11 @@
       </div>
       <div class="text-center mobile-menu">
         <ul class="list-unstyled d-flex flex-column gap-3 pt-3 fs-4">
-          <li><a class="text-decoration-none mobile-menu-item fw-semibold display-3" href="about.html">About</a></li>
+          <li><a class="text-decoration-none mobile-menu-item fw-semibold display-3" href="index.html">Home</a></li>
           <li><a class="text-decoration-none mobile-menu-item fw-semibold display-3" href="index.html#program">Program</a></li>
           <li><a class="text-decoration-none mobile-menu-item fw-semibold display-3" href="index.html#performers">Performers</a></li>
           <li><a class="text-decoration-none mobile-menu-item fw-semibold display-3" href="about.html#sponsors">Partners</a></li>
-          <li><a class="text-decoration-none mobile-menu-item fw-semibold display-3" href="about.html#cf-campaign">CF Campaign</a></li>
+          <li><a class="text-decoration-none mobile-menu-item fw-semibold display-3" href="about.html#cf-campaign">Campaign</a></li>
         </ul>
       </div>
       <div><a href="index.html"><img class="pt-1 ms-5" src="./assets/mobile/cflogo.png" width="40" height="40" alt="Concert Festival Logo"></a></div>
@@ -102,12 +102,16 @@
         </div>
         <div class="past-events d-md-flex my-md-3 mx-auto">
           <div class="moscow-event text-light">
-            <h2 class="display-3 fw-semibold">2022</h2>
-            <p class="lead fw-semibold">Concert Festival 2022 in Moscow</p>
+            <div class="overlay pt-5">
+              <h2 class="display-3 fw-semibold">2022</h2>
+              <p class="lead fw-semibold">Concert Festival 2022 in Moscow</p>
+            </div>
           </div>
           <div class="text-light cairo-event">
-            <h2 class="display-3 fw-semibold">2021</h2>
-            <p class="lead fw-semibold">Concert Festival 2022 in Cairo</p>
+            <div class="overlay pt-5">
+              <h2 class="display-3 fw-semibold">2021</h2>
+              <p class="lead fw-semibold">Concert Festival 2022 in Cairo</p>
+            </div>
           </div>
         </div>
       </div>
@@ -127,11 +131,18 @@
       </div>
     </section>
   </main>
-  <footer class="container-fluid">
-    <div class="container text-center lead fw-semibold">
-      <p>&commat; 2023 Concert Festival All Rights Reserved</p>
+<footer class="d-md-block">
+  <div class="container-fluid d-flex py-3 footer-about align-items-center justify-content-around">
+    <img class="py-2" src="./assets/mobile/cflogo.png" alt="concert festival logo">
+    <div>
+      <p class="lead fw-semibold footer-text">&commat; 2023 Concert Festival All Rights Reserved</p>
+      <p class="footer-text">The Concert Festival is one of World's most
+        anticipated cultural events .<br/> Rehearsals are open to the public
+        and concerts feature both classical masterworks <br/> and contemporary
+        pieces performed by world-renowned musicians.</p>
     </div>
-  </footer>
+  </div>
+</footer>
   <script src="index.js"></script>
 </body>
 </html>
