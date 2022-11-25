@@ -51,8 +51,11 @@ body {
   font-family: 'lato', sans-serif;
 }
 
+#sponsors {
+  background-color: #4c4b4b
+}
+
 .partners {
-  background-color: #4c4b4b;
   width: 95%;
   margin: 1rem auto;
   max-height: 90%;
