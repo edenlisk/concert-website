@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="description" content="Concert Festival Website">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>C Festival</title>
+  <link href="style.css" rel="stylesheet">
+  <link href="about.css" rel="stylesheet">
+  <link href="https://fonts.cdnfonts.com/css/cocogoose" rel="stylesheet">
+  <link href='https://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.2/font/bootstrap-icons.css">
+</head>
+<body>
+  <div>
+    <nav>
+      <header class="container-fluid header pt-0 pb-0">
+        <ul class="list-unstyled list-inline text-end header-bar lead fs-6">
+          <li class="list-inline-item"><a href="#" aria-label="Facebook"><i class="header-item bi-facebook"></i></a></li>
+          <li class="list-inline-item"><a href="#" aria-label="Twitter"><i class="header-item bi-twitter"></i></a></li>
+          <li class="list-inline-item"><a class="header-item text-decoration-none" href="#">English</a></li>
+          <li class="list-inline-item"><a class="header-item text-decoration-none" href="#">My Page</a></li>
+          <li class="list-inline-item"><a class="header-item text-decoration-none" href="#">Logout</a></li>
+        </ul>
+      </header>
+      <nav class="bg-light d-md-flex desktop-nav">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html"><img class="pt-1 ms-5" src="./assets/mobile/cflogo.png" width="40" height="40" alt="Concert Festival Logo"></a>
+        </div>
+        <div class="text-center desktop-navigation py-2 pe-5 me-5">
+          <ul class="list-unstyled fw-bold d-md-flex align-items-center gap-4 justify-content-center px-5">
+            <li><a class="text-decoration-none list-inline-item desktop-nav-item" href="about.html">About</a></li>
+            <li><a class="text-decoration-none list-inline-item desktop-nav-item" href="#program">Program</a></li>
+            <li><a class="text-decoration-none list-inline-item desktop-nav-item" href="#performers">Performers</a></li>
+            <li><a class="text-decoration-none list-inline-item desktop-nav-item" href="#sponsors">Partners</a></li>
+            <li><a class="text-decoration-none list-inline-item desktop-nav-item py-1 px-1 bordered lh-1 campaign fw-normal" href="about.html#cf-campaign">Campaign</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="container-fluid fixed-top shadow bg-white py-2 d-flex d-md-none align-items-center justify-content-between mobile-nav">
+        <div class="hamburger-icon">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+        <div class="text-center mobile-menu">
+          <ul class="list-unstyled d-flex flex-column gap-3 pt-3 fs-4">
+            <li><a class="text-decoration-none mobile-menu-item fw-semibold display-3" href="about.html">About</a></li>
+            <li><a class="text-decoration-none mobile-menu-item fw-semibold display-3" href="#program">Program</a></li>
+            <li><a class="text-decoration-none mobile-menu-item fw-semibold display-3" href="#performers">Performers</a></li>
+            <li><a class="text-decoration-none mobile-menu-item fw-semibold display-3" href="about.html#sponsors">Partners</a></li>
+            <li><a class="text-decoration-none mobile-menu-item fw-semibold display-3" href="about.html#cf-campaign">Campaign</a></li>
+          </ul>
+        </div>
+        <div><a href="index.html"><img class="pt-1 ms-5" src="./assets/mobile/cflogo.png" width="40" height="40" alt="Concert Festival Logo"></a></div>
+      </div>
+    </nav>
+  </div>
+  <main>
+    <section class="main-page pt-5">
+      <div class="container pt-5 pb-4">
+        <h1 class="lead welcome">"Hello DJs & Musicians"</h1>
+        <h1 class="display-4 fw-bold welcome">CONCERT FESTIVAL</h1>
+        <p class="display-3 fw-bold welcome">2023</p>
+      </div>
+      <div class="container mx-auto p-3 description">
+        <p>Concert Festival brings internationally celebrated artists and the
+          world’s brightest rising stars to Rwanda for solo recitals, chamber music
+          and community outreach, building a vibrant local arts scene and inspiring
+          audience members of all ages with performances that are accessible to all.
+        </p>
+      </div>
+      <div class="container event pt-5 ps-4 pb-5">
+        <h2 class="event-date h2">2023.01.01(SUN)~03(TUE)</h2>
+        <p class="event-location ">&commat;Kigali Convention Center, Rwanda</p>
+      </div>
+    </section>
+    <section id="program" class="about-page py-md-5">
+      <div class="container d-flex flex-md flex-column align-items-center main-program">
+        <h2 class="text-light pt-3">Event Program</h2>
+        <span class="orange-bar"></span>
+      </div>
+      <div id="performers" class="event-section d-md-flex mx-auto gap-1 pt-2">
+        <div class="section mx-auto my-2 d-flex  flex-md-column justify-content-md-center align-items-center">
+          <img class="ps-3" src="assets/mobile/program-activities/microphone.png" alt="Microphone Icon" width="64" height="58">
+          <h3 class="activity-name text-md-center">Music</h3>
+          <div class="container text-start text-md-center text-light">
+            <p>From Jun 01 to Jan 3rd, each night of the festival will feature a unique musical program ,
+              taking stage once again at the prestigious.
+            </p>
+          </div>
+        </div>
+        <div class="section mx-auto my-2 d-flex flex-md-column justify-content-md-center align-items-center">
+          <img class="ps-2" src="assets/mobile/program-activities/forum.png" alt="Forum Icon" width="64" height="58">
+          <h3 class="activity-name text-md-center">Forum</h3>
+          <div class="container text-start text-md-center text-light">
+            <p>The place to discuss music! Be it your favorite recordings,
+              the mastering work of SH, or anything else related to music,
+              this is the place to be.
+            </p>
+          </div>
+        </div>
+        <div class="section mx-auto my-2 d-flex flex-md-column justify-content-md-center align-items-center">
+          <img class="ps-1" src="assets/mobile/program-activities/stage.png" alt="Stage Icon" width="64" height="58">
+          <h3 class="activity-name work-exhi text-md-center">Exhibition</h3>
+          <div class="container text-start text-md-center text-light">
+            <p>
+              The exhibition includes seven video works and installations of
+              apps that contemplate how we make music, interact via
+              social media.
+            </p>
+          </div>
+        </div>
+        <div class="section mx-auto my-2 d-flex flex-md-column justify-content-md-center align-items-center">
+          <img class="ps-1" src="assets/mobile/program-activities/workshop.png" alt="Workshop Icon" width="64" height="58">
+          <h3 class="activity-name work-exhi text-md-center">Workshop</h3>
+          <div class="container text-start text-md-center text-light">
+            <p>
+              Since its inception in 2002 CF has become one of the most anticipated
+              community events worldwide branching out as a pop-up
+              events.
+            </p>
+          </div>
+        </div>
+        <div class="section mx-auto my-2 d-flex flex-md-column justify-content-md-center align-items-center">
+          <img class="ps-1" src="assets/mobile/program-activities/ignite.png" alt="ignite icon" width="64" height="58">
+          <h3 class="activity-name ignite text-md-center">CF Ignite</h3>
+          <div class="container text-start text-md-center text-light">
+            <p>CF is an excellent place to connect with other like-minded
+              musicians and industry professionals, which could lead to new and
+              fruitful connections.
+            </p>
+          </div>
+        </div>
+        <div class="join-section text-center d-md-none mx-auto rounded-1">
+          <p class="join p-4">Join CF Edition 2023</p>
+        </div>
+      </div>
+      <div class="text-center py-5">
+        <a href="#" class="text-decoration-underline d-none text-light d-md-block">SEE THE WHOLE PROGRAM</a>
+      </div>
+    </section>
+      <div class="performers-main-container">
+        <div class="performers-section py-3">
+        </div>
+      </div>
+    <section id="sponsors" class="container-fluid d-none d-md-block">
+      <div class="d-flex flex-wrap gap-3 partners justify-content-center">
+        <div class="container container-md">
+          <h3 class="text-center text-light">Partners</h3>
+          <span class="orange-bar mx-auto"></span>
+        </div>
+        <div class="partners-logo">
+          <img class="mx-auto" src="assets/mobile/partners/microsoft.png" alt="microsoft logo" height="100" width="200">
+          <img class="mx-auto" src="./assets/mobile/partners/google.png" alt="google logo" width="200" height="85">
+          <img class="mx-auto" src="./assets/mobile/partners/pixar.png" alt="pixar logo" width="300" height="100">
+          <img class="mx-auto" src="./assets/mobile/partners/microverse.png" alt="microverse logo" width="400" height="99">
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="d-none d-md-block">
+    <div class="container-fluid d-flex align-items-center justify-content-around">
+      <img class="py-2" src="./assets/mobile/cflogo.png" alt="concert festival logo">
+      <div>
+        <p class="lead fw-semibold footer-text text-dark">&commat; 2023 Concert Festival All Rights Reserved</p>
+        <p class="text-dark">The Concert Festival is one of World's most
+          anticipated cultural events .<br/> Rehearsals are open to the public
+          and concerts feature both classical masterworks <br/> and contemporary
+          pieces performed by world-renowned musicians.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="index.js"></script>
+</body>
+</html>
