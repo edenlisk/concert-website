@@ -1,6 +1,9 @@
 const header = document.querySelector('.header');
 const desktopNav = document.querySelector('.desktop-nav');
 const headerHeight = header.style.height;
+const body = document.querySelector('body');
+const mobileMenu = document.querySelector('.mobile-menu');
+const hamburgerIcon = document.querySelector('.hamburger-icon');
 function restore() {
   hamburgerIcon.classList.remove('active');
   mobileMenu.classList.remove('active');
@@ -14,9 +17,7 @@ window.onscroll = function fixedNav() {
     desktopNav.classList.remove('fixed-top');
   }
 };
-const body = document.querySelector('body');
-const mobileMenu = document.querySelector('.mobile-menu');
-const hamburgerIcon = document.querySelector('.hamburger-icon');
+
 hamburgerIcon.addEventListener('click', () => {
   hamburgerIcon.classList.toggle('active');
   mobileMenu.classList.toggle('active');
@@ -60,55 +61,55 @@ const performersInfo = [
   {
     performerPicture: './assets/mobile/performers/sara-mingardo.jpg',
     performername: 'Sara Mingardo',
-    AlternativeText:'Sara Mingardo',
+    alternativeText: 'Sara Mingardo',
     post: 'Contralto',
-    performerDescription: 'The Italian true contralto, Sara Mingardo, studied in her hometown Venice' +
-        ' at the Academy Benedetto Marcello. She won prizes in some singing competitions',
+    performerDescription: 'The Italian true contralto, Sara Mingardo, studied in her hometown Venice'
+        + ' at the Academy Benedetto Marcello. She won prizes in some singing competitions',
   },
   {
     performerPicture: './assets/mobile/performers/maddalena-de-biasi.jpg',
     performername: 'Maddalena De Biasi',
-    AlternativeText:'Maddalena De Biasi',
+    alternativeText: 'Maddalena De Biasi',
     post: 'Soprano',
-    performerDescription: 'Maddalena began her musical studies at a very young age. At the age of sixteen' +
-        ' she was admitted to the conservatory Dall’Abaco in Verona and then graduated with full marks in 2019.',
+    performerDescription: 'Maddalena began her musical studies at a very young age. At the age of sixteen'
+        + ' she was admitted to the conservatory Dall’Abaco in Verona and then graduated with full marks in 2019.',
   },
   {
     performerPicture: './assets/mobile/performers/elaine-daiber.jpg',
     performername: 'Elaine Daiber',
-    AlternativeText:'Elaine Daiber',
+    alternativeText: 'Elaine Daiber',
     post: 'Soprano',
-    performerDescription: 'Boston-based soprano, Elaine Daiber, has been heralded for her “spectacular vocalism”,' +
-        ' which has garnered much acclaim on the operatic, concert, and recital stages.',
+    performerDescription: 'Boston-based soprano, Elaine Daiber, has been heralded for her “spectacular vocalism”,'
+        + ' which has garnered much acclaim on the operatic, concert, and recital stages.',
   },
   {
     performerPicture: './assets/mobile/performers/elena-matteucci.jpg',
     performername: 'Elena Matteucci',
-    AlternativeText:'Elena Matteucci',
+    alternativeText: 'Elena Matteucci',
     post: 'Piano.',
     bar: '',
-    performerDescription: 'Pianist Matteucci graduated with special honors in piano' +
-        ' from the Santa Cecilia Conservatory' +
-        ' and in chamber music from the Academy of Santa Cecilia with' +
-        ' Riccardo Brengola.',
+    performerDescription: 'Pianist Matteucci graduated with special honors in piano'
+        + ' from the Santa Cecilia Conservatory'
+        + ' and in chamber music from the Academy of Santa Cecilia with'
+        + ' Riccardo Brengola.',
   },
   {
     performerPicture: './assets/mobile/performers/federico-piccotti.jpg',
     performername: 'Federico Piccotti',
-    AlternativeText:'Federico Piccotti',
+    alternativeText: 'Federico Piccotti',
     post: 'Violino',
     bar: '',
-    performerDescription: 'Born in Rome, he graduated from the Conservatory of santa' +
-        'Cecilia and subsequently specialised at the National Academy of Santa Cecilia.',
+    performerDescription: 'Born in Rome, he graduated from the Conservatory of santa'
+        + 'Cecilia and subsequently specialised at the National Academy of Santa Cecilia.',
   },
   {
     performerPicture: './assets/mobile/performers/tomasz-sierant.gif',
     performername: 'Tomasz Sierant',
-    AlternativeText:'Tomasz Sierant',
+    alternativeText: 'Tomasz Sierant',
     post: 'Flaute',
     bar: '',
-    performerDescription: 'Polish flutist Tomasz Sierant: born in 1995, began music study 2008;' +
-        'immediately became successful in flute competitions; received music education in Poland, Belgium and Switzerland',
+    performerDescription: 'Polish flutist Tomasz Sierant: born in 1995, began music study 2008;'
+        + 'immediately became successful in flute competitions; received music education in Poland, Belgium and Switzerland',
   },
 ];
 
@@ -135,7 +136,7 @@ for (let i = 0; i < performersInfo.length; i += 1) {
   const performerImg = document.createElement('img');
   performerImg.classList.add('performer-img');
   performerImg.src = performersInfo[i].performerPicture;
-  performerImg.alt = performersInfo[i].AlternativeText
+  performerImg.alt = performersInfo[i].alternativeText;
   performerImg.width = 130;
   performerImg.height = 100;
 
@@ -145,7 +146,7 @@ for (let i = 0; i < performersInfo.length; i += 1) {
   performerRight.classList.add(
     'performer-right',
     'bg-light',
-      'p-3'
+    'p-3',
   );
 
   const performerName = document.createElement('h3');
